@@ -1,47 +1,22 @@
+// Simple mongoose connection without complex caching
 import mongoose from 'mongoose'
 
-const MONGODB_URI = process.env.MONGODB_URI!
+const MONGODB_URI = process.env.MONGODB_URI
 
 if (!MONGODB_URI) {
-  throw new Error('Please define the MONGODB_URI environment variable inside .env.local')
+  console.log('MongoDB not configured, using fallback')
 }
 
-declare global {
-  var mongoose: {
-    conn: typeof mongoose | null
-    promise: Promise<typeof mongoose> | null
-  } | undefined
-}
-
-let cached = global.mongoose
-
-if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null }
-}
-
-async function connectDB() {
-  if (cached.conn) {
-    return cached.conn
-  }
-
-  if (!cached.promise) {
-    const opts = {
-      bufferCommands: false,
-    }
-
-    cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
-      return mongoose
-    })
-  }
-  
+export default async function connectDB() {
   try {
-    cached.conn = await cached.promise
-  } catch (e) {
-    cached.promise = null
-    throw e
+    if (!MONGODB_URI) {
+      return null
+    }
+    
+    const conn = await mongoose.connect(MONGODB_URI)
+    return conn
+  } catch (error) {
+    console.error('MongoDB connection error:', error)
+    return null
   }
-
-  return cached.conn
 }
-
-export default connectDB
