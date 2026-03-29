@@ -3,30 +3,5 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "regions": ["sin1"],
-  "env": {
-    "NEXTAUTH_URL": "@nextauth_url",
-    "NEXTAUTH_SECRET": "@nextauth_secret",
-    "MONGODB_URI": "@mongodb_uri",
-    "ADMIN_EMAIL": "@admin_email",
-    "ADMIN_PASSWORD": "@admin_password",
-    "CLOUDINARY_CLOUD_NAME": "@cloudinary_cloud_name",
-    "CLOUDINARY_API_KEY": "@cloudinary_api_key",
-    "CLOUDINARY_API_SECRET": "@cloudinary_api_secret"
-  },
-  "build": {
-    "env": {
-      "NEXTAUTH_URL": "https://your-domain.vercel.app"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/admin/:path*",
-      "destination": "/admin/:path*"
-    },
-    {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
-    }
-  ]
+  "regions": ["sin1"]
 }

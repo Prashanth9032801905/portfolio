@@ -72,3 +72,5 @@ pids
 # resumes/*.pdf
 # resumes/*.doc
 # resumes/*.docx
+
+.vercel
