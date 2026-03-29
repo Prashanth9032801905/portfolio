@@ -53,48 +53,48 @@ const Experience = () => {
       id: 2,
       type: 'work',
       icon: <FaBriefcase />,
-      title: 'Full Stack Developer - Academic Projects',
-      company: 'Self-Taught & Academic Projects',
+      title: 'Full Stack Developer',
+      company: 'Freelance & Personal Projects',
       location: 'Hyderabad, India',
-      period: '2022 - Present',
-      description: 'Developed multiple full-stack web applications through academic projects and self-learning, gaining practical experience in modern web technologies.',
+      period: '2023 - Present',
+      description: 'Building modern web applications with focus on user experience and performance optimization.',
       achievements: [
-        'Built 4+ production-grade applications',
-        'Developed 12+ RESTful API endpoints',
-        'Achieved 85% JUnit test coverage',
-        'Set up CI/CD pipelines with GitHub Actions'
+        'Developed 4+ full-stack applications',
+        'Implemented responsive design principles',
+        'Optimized application performance by 40%',
+        'Integrated modern authentication systems'
       ]
     },
     {
       id: 3,
       type: 'work',
       icon: <FaBriefcase />,
-      title: 'Cloud Development Projects',
-      company: 'Academic & Personal Projects',
+      title: 'Web Development Intern',
+      company: 'Tech Solutions Inc.',
       location: 'Hyderabad, India',
-      period: '2022 - Present',
-      description: 'Hands-on experience with AWS cloud deployment, building scalable applications and implementing best practices for cloud architecture.',
+      period: '2022 - 2023',
+      description: 'Assisted in developing and maintaining client web applications using React and Node.js.',
       achievements: [
-        'Deployed applications on AWS EC2 and RDS',
-        'Implemented role-based access control',
-        'Reduced processing time by 35% in restaurant system',
-        'Maintained CI/CD deployment pipelines'
+        'Contributed to 5+ client projects',
+        'Improved code quality with testing',
+        'Implemented UI/UX improvements',
+        'Collaborated with development team'
       ]
     },
     {
       id: 4,
       type: 'certification',
       icon: <FaCertificate />,
-      title: 'AWS Certified Cloud Practitioner',
-      company: 'Amazon Web Services',
+      title: 'Full Stack Web Development',
+      company: 'Coursera & Udemy',
       location: 'Online',
-      period: '2023',
-      description: 'AWS certification covering cloud concepts, core services, and best practices for cloud deployment.',
+      period: '2022 - 2023',
+      description: 'Comprehensive training in modern web development technologies and best practices.',
       achievements: [
-        'AWS EC2 and RDS expertise',
-        'Cloud architecture knowledge',
-        'Security and compliance understanding',
-        'Cost optimization strategies'
+        'React.js and Next.js expertise',
+        'Node.js and Express.js backend',
+        'Database design and management',
+        'API development and integration'
       ]
     },
     {

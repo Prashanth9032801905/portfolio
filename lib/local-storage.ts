@@ -53,16 +53,16 @@ class LocalStorageManager {
 
   private static getDefaultProfile(): ProfileData {
     return {
-      name: 'PODIMEKALA PRASHANTH',
-      role: 'Jr. Software Engineer',
-      bio: 'Computer Science graduate (B.Tech - AI & ML, 2026) with strong hands-on experience in full-stack web development. Proficient in HTML5, CSS3, JavaScript (ES6+), React.js, and modern web technologies. Built 4+ production-grade full-stack web applications through academic projects and self-learning.',
+      name: 'Prashanth',
+      role: 'Full Stack Developer',
+      bio: 'Passionate full-stack developer with expertise in modern web technologies. Specialized in React, Next.js, and creating responsive, user-friendly applications. Strong problem-solving skills and commitment to clean, efficient code.',
       location: 'Hyderabad, India',
       email: 'prashanthpodimekala@gmail.com',
-      phone: '',
+      phone: '+91 XXXXXXXXXX',
       profileImage: '/profile.jpg',
       resume: '/resumes/resume-current.pdf',
       github: 'https://github.com/Prashanth9032801905',
-      linkedin: 'https://www.linkedin.com/in/podimekala-prashanth/'
+      linkedin: 'https://www.linkedin.com/in/prashanth-podimekala/'
     }
   }
 
@@ -96,11 +96,62 @@ class LocalStorageManager {
           { name: 'Spring Boot', icon: 'FaNodeJs', color: 'text-green-600' },
           { name: 'MySQL', icon: 'SiMongodb', color: 'text-blue-600' }
         ],
-        githubLink: 'https://github.com',
-        liveLink: 'https://example.com',
+        githubLink: 'https://github.com/Prashanth9032801905',
+        liveLink: 'https://portfolio-template-psi-ten.vercel.app',
         image: '',
         featured: true,
         period: 'Jan 2024 - Apr 2024'
+      },
+      {
+        _id: '2',
+        title: 'Restaurant Management System',
+        description: 'Complete restaurant management solution with order processing, inventory tracking, and customer management.',
+        techStack: [
+          { name: 'Next.js', icon: 'FaReact', color: 'text-cyan-400' },
+          { name: 'TypeScript', icon: 'SiTypescript', color: 'text-blue-500' },
+          { name: 'Tailwind CSS', icon: 'SiTailwindcss', color: 'text-teal-500' },
+          { name: 'Node.js', icon: 'FaNodeJs', color: 'text-green-600' },
+          { name: 'MongoDB', icon: 'SiMongodb', color: 'text-green-500' }
+        ],
+        githubLink: 'https://github.com/Prashanth9032801905',
+        liveLink: 'https://portfolio-template-psi-ten.vercel.app',
+        image: '',
+        featured: true,
+        period: 'Feb 2024 - May 2024'
+      },
+      {
+        _id: '3',
+        title: 'Speech-to-Text AI App',
+        description: 'AI-powered speech recognition application with real-time transcription and voice commands.',
+        techStack: [
+          { name: 'Python', icon: 'FaPython', color: 'text-yellow-400' },
+          { name: 'TensorFlow', icon: 'SiTensorflow', color: 'text-orange-500' },
+          { name: 'React.js', icon: 'FaReact', color: 'text-cyan-400' },
+          { name: 'FastAPI', icon: 'FaNodeJs', color: 'text-green-600' },
+          { name: 'WebRTC', icon: 'FaMicrophone', color: 'text-red-500' }
+        ],
+        githubLink: 'https://github.com/Prashanth9032801905',
+        liveLink: 'https://portfolio-template-psi-ten.vercel.app',
+        image: '',
+        featured: true,
+        period: 'Mar 2024 - Jun 2024'
+      },
+      {
+        _id: '4',
+        title: 'CCTV Monitoring System',
+        description: 'Security monitoring system with real-time video streaming, motion detection, and alert notifications.',
+        techStack: [
+          { name: 'React.js', icon: 'FaReact', color: 'text-cyan-400' },
+          { name: 'WebRTC', icon: 'FaVideo', color: 'text-blue-500' },
+          { name: 'Node.js', icon: 'FaNodeJs', color: 'text-green-600' },
+          { name: 'Socket.io', icon: 'FaPlug', color: 'text-purple-500' },
+          { name: 'OpenCV', icon: 'FaCamera', color: 'text-red-500' }
+        ],
+        githubLink: 'https://github.com/Prashanth9032801905',
+        liveLink: 'https://portfolio-template-psi-ten.vercel.app',
+        image: '',
+        featured: true,
+        period: 'Apr 2024 - Jul 2024'
       }
     ]
   }
@@ -126,26 +177,50 @@ class LocalStorageManager {
     return [
       {
         _id: '1',
-        category: 'Frontend',
+        category: 'Frontend Development',
         items: [
           { name: 'React.js', icon: 'FaReact', color: 'text-cyan-400' },
+          { name: 'Next.js', icon: 'FaReact', color: 'text-gray-800' },
           { name: 'TypeScript', icon: 'SiTypescript', color: 'text-blue-400' },
           { name: 'Redux', icon: 'SiRedux', color: 'text-purple-500' },
           { name: 'HTML5', icon: 'FaHtml5', color: 'text-orange-500' },
           { name: 'CSS3', icon: 'FaCss3Alt', color: 'text-blue-500' },
           { name: 'JavaScript', icon: 'FaJs', color: 'text-yellow-400' },
+          { name: 'Tailwind CSS', icon: 'SiTailwindcss', color: 'text-teal-500' },
         ]
       },
       {
         _id: '2',
-        category: 'Backend & APIs',
+        category: 'Backend Development',
         items: [
-          { name: 'Java', icon: 'FaDatabase', color: 'text-red-500' },
-          { name: 'Spring Boot', icon: 'FaNodeJs', color: 'text-green-600' },
           { name: 'Node.js', icon: 'FaNodeJs', color: 'text-green-500' },
+          { name: 'Java', icon: 'FaJava', color: 'text-red-500' },
+          { name: 'Spring Boot', icon: 'FaLeaf', color: 'text-green-600' },
           { name: 'Python', icon: 'FaPython', color: 'text-blue-400' },
           { name: 'REST APIs', icon: 'FaDatabase', color: 'text-gray-400' },
-          { name: 'JWT Auth', icon: 'FaGitAlt', color: 'text-orange-500' },
+          { name: 'GraphQL', icon: 'FaPlug', color: 'text-pink-500' },
+          { name: 'JWT Auth', icon: 'FaKey', color: 'text-orange-500' },
+        ]
+      },
+      {
+        _id: '3',
+        category: 'Database & Tools',
+        items: [
+          { name: 'MongoDB', icon: 'SiMongodb', color: 'text-green-500' },
+          { name: 'MySQL', icon: 'SiMysql', color: 'text-blue-600' },
+          { name: 'Git', icon: 'FaGit', color: 'text-red-500' },
+          { name: 'Docker', icon: 'FaDocker', color: 'text-blue-400' },
+          { name: 'Webpack', icon: 'FaCube', color: 'text-blue-500' },
+        ]
+      },
+      {
+        _id: '4',
+        category: 'AI & Machine Learning',
+        items: [
+          { name: 'TensorFlow', icon: 'SiTensorflow', color: 'text-orange-500' },
+          { name: 'PyTorch', icon: 'FaFire', color: 'text-red-500' },
+          { name: 'OpenCV', icon: 'FaCamera', color: 'text-blue-500' },
+          { name: 'NLP', icon: 'FaBrain', color: 'text-purple-500' },
         ]
       }
     ]

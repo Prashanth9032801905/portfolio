@@ -85,13 +85,13 @@ const Contact = () => {
     {
       icon: <FaGithub />,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/Prashanth9032801905',
       color: 'hover:text-gray-400'
     },
     {
       icon: <FaLinkedin />,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/prashanth-podimekala/',
       color: 'hover:text-blue-400'
     }
   ]
