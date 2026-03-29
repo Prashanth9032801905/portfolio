@@ -1,0 +1,30 @@
+# Run these commands in Command Prompt or PowerShell
+
+# 1. Configure Git user (run these once)
+git config --global user.name "Prashanth9032801905"
+git config --global user.email "prashanthpodimekala@gmail.com"
+
+# 2. Navigate to your portfolio folder
+cd c:\Users\SOWMYA\Downloads\portfolio-template
+
+# 3. Initialize Git repository
+git init
+
+# 4. Add all files
+git add .
+
+# 5. Make initial commit
+git commit -m "Initial commit: Dynamic portfolio with admin dashboard"
+
+# 6. Create GitHub repository first at: https://github.com/new
+#    - Repository name: portfolio
+#    - Description: Professional portfolio website built with Next.js
+#    - Public visibility
+#    - Don't initialize with README, .gitignore, or license
+
+# 7. Connect to GitHub (replace with your actual repository URL)
+git remote add origin https://github.com/Prashanth9032801905/portfolio.git
+git branch -M main
+
+# 8. Push to GitHub
+git push -u origin main
