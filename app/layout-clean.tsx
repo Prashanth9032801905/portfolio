@@ -31,9 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen bg-background text-foreground">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   )

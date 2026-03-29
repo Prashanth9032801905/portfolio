@@ -1,0 +1,58 @@
+VERCEL DEPLOYMENT GUIDE - STEP BY STEP
+=====================================
+
+YOUR PORTFOLIO IS ALREADY DEPLOYED!
+URL: https://portfolio-template-psi-ten.vercel.app
+
+STEP 1: ADD ENVIRONMENT VARIABLES
+-------------------------------
+1. Go to your Vercel project
+2. Click "Settings" tab
+3. Click "Environment Variables" (left menu)
+4. Click "Add Variable" button
+
+ADD THESE VARIABLES:
+--------------------
+Variable Name: NEXTAUTH_URL
+Variable Value: https://portfolio-template-psi-ten.vercel.app
+Click "Save"
+
+Variable Name: NEXTAUTH_SECRET  
+Variable Value: portfolio-secret-key-2024-secure-random-string-32-chars
+Click "Save"
+
+Variable Name: ADMIN_EMAIL
+Variable Value: admin@example.com
+Click "Save"
+
+Variable Name: ADMIN_PASSWORD
+Variable Value: admin123
+Click "Save"
+
+STEP 2: REDEPLOY
+--------------
+1. Go to "Deployments" tab
+2. Click "..." (three dots) on latest deployment
+3. Click "Redeploy"
+4. Wait 2-3 minutes
+
+STEP 3: TEST YOUR PORTFOLIO
+--------------------------
+Visit: https://portfolio-template-psi-ten.vercel.app
+
+Test these features:
+- Main portfolio loads
+- All sections work
+- Admin panel: /admin/login
+- Login: admin@example.com / admin123
+
+ALTERNATIVE - SKIP ENVIRONMENT VARIABLES
+---------------------------------------
+If this is too complicated:
+1. Just visit: https://portfolio-template-psi-ten.vercel.app
+2. Your portfolio will work (except admin panel)
+3. Add environment variables later if needed
+
+YOUR PORTFOLIO IS LIVE! 🎉
+=========================
+Share this URL: https://portfolio-template-psi-ten.vercel.app

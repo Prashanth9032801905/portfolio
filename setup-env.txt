@@ -1,0 +1,64 @@
+# Environment Variables Setup for Portfolio
+# Copy these values to your .env.local file and Vercel Dashboard
+
+# ===========================================
+# STEP 1: Create .env.local file
+# ===========================================
+# Create a new file named .env.local in your portfolio folder
+# Add the following content to it:
+
+# Required Variables
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=portfolio-secret-key-2024-secure-random-string
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=admin123
+
+# Optional Variables (leave empty if not using)
+MONGODB_URI=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+
+# ===========================================
+# STEP 2: For Vercel Production
+# ===========================================
+# After deploying to Vercel, update these values:
+
+# Change NEXTAUTH_URL to:
+NEXTAUTH_URL=https://your-actual-vercel-domain.vercel.app
+
+# Generate a new secret at: https://generate-secret.vercel.app/32
+NEXTAUTH_SECRET=copy-generated-secret-here
+
+# Keep admin credentials the same or change them:
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=admin123
+
+# ===========================================
+# STEP 3: Add to Vercel Dashboard
+# ===========================================
+# 1. Go to your Vercel project
+# 2. Settings → Environment Variables
+# 3. Add each variable with its value
+# 4. Select: Production, Preview, Development
+# 5. Save and redeploy
+
+# ===========================================
+# QUICK COPY-PASTE FOR .env.local
+# ===========================================
+
+# For Local Development:
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=portfolio-secret-key-2024-secure-random-string-32-chars
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=admin123
+
+# For Vercel Production:
+NEXTAUTH_URL=https://your-domain.vercel.app
+NEXTAUTH_SECRET=copy-generated-secret-here
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=admin123
+MONGODB_URI=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=

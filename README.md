@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Podimekala Prashanth - Portfolio Website
 
 A modern, high-end developer portfolio website built with Next.js, Tailwind CSS, and Framer Motion. Featuring smooth animations, glassmorphism design, and a premium dark theme.
@@ -208,3 +209,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 Built with ❤️ using Next.js, Tailwind CSS, and Framer Motion
+=======
+# portfolio
+>>>>>>> b56ab3af37005cd38dc63d397c82a8bf5d2e644b
