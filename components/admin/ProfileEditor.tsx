@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { motion } from 'framer-motion'
 import { toast } from 'react-hot-toast'
-import { FaUpload, FaEye, FaSave, FaUser } from 'react-icons/fa'
+import { FaUpload, FaEye, FaSave, FaUser, FaDownload } from 'react-icons/fa'
 
 interface ProfileData {
   name: string
