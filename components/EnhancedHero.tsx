@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaDownload, FaArrowRight } from 'react-icons/fa'
 import PremiumProfile from '@/components/PremiumProfile'
+import LocalStorageManager from '@/lib/local-storage'
 
 interface ProfileData {
   name: string
@@ -24,21 +25,13 @@ const EnhancedHero = () => {
   const [displayText, setDisplayText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
   
-  const roles = profile ? [profile.role, 'Full Stack Developer', 'AI & ML Enthusiast'] : ['Jr. Software Engineer']
-
   useEffect(() => {
-    fetchProfile()
+    // Use local storage manager to get profile data
+    const profileData = LocalStorageManager.getProfile()
+    setProfile(profileData)
   }, [])
 
-  const fetchProfile = async () => {
-    try {
-      const response = await fetch('/api/portfolio')
-      const data = await response.json()
-      setProfile(data.profile)
-    } catch (error) {
-      console.error('Failed to fetch profile:', error)
-    }
-  }
+  const roles = profile ? [profile.role, 'Full Stack Developer', 'AI & ML Enthusiast'] : ['Jr. Software Engineer']
 
   useEffect(() => {
     if (!roles.length) return
